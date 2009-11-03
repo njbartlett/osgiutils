@@ -208,10 +208,10 @@ public class ConfigAdminCommandProvider implements CommandProvider {
 		if(factoryPid == null) {
 			config = cm.getConfiguration(pid, null);
 		} else {
-			props.put(ALIAS_KEY, factoryPid);
-			Configuration[] configs = cm.listConfigurations("(" + ALIAS_KEY + "=" + factoryPid + ")");
+			props.put(ALIAS_KEY, pid);
+			Configuration[] configs = cm.listConfigurations("(" + ALIAS_KEY + "=" + pid + ")");
 			if(configs == null || configs.length == 0) {
-				config = cm.createFactoryConfiguration(pid, null);
+				config = cm.createFactoryConfiguration(factoryPid, null);
 			} else {
 				config = configs[0];
 			}
