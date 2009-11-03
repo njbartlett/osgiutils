@@ -1,0 +1,4 @@
+# Ignore everthing except config.ini and this file
+*
+!.gitignore
+!config.ini

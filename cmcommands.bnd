@@ -1,0 +1,6 @@
+ver: 0.0.1
+-output: build/cmcommands_${ver}.jar
+
+Bundle-Activator: eu.wwuk.osgi.utils.cmcommands.Activator
+Private-Package: eu.wwuk.osgi.utils.cmcommands
+Include-Resource: OSGI-OPT/src=src
