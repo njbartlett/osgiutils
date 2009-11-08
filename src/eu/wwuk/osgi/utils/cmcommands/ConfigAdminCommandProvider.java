@@ -39,7 +39,7 @@ public class ConfigAdminCommandProvider implements CommandProvider {
 				+ "\tinstallConfig <url> - install a configuration properties file\n"
 				+ "\tlistConfigs - list configurations\n"
 				+ "\tshowConfig <pid> - show contents of specified configuration\n"
-				+ "\tdeleteConfig <pid> - delete specified configuration";
+				+ "\tdeleteConfig <pid> - delete specified configuration\n";
 	}
 	
 	public void _installConfig(CommandInterpreter ci) throws IOException, InvalidSyntaxException {
